@@ -1,0 +1,82 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif; /* Set a clean and modern font */
+  background-color: #eef2f3; /* Light background for the overall page */
+  margin: 0;
+  padding: 0;
+}
+
+/* Todo Form Styles */
+form {
+  background: #ffffff; /* White background for form */
+  padding: 20px; /* Padding around the form */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  margin-top: 20px; /* Space above the form */
+  display: flex; /* Use flexbox for alignment */
+  flex-direction: column; /* Stack children vertically */
+  max-width: 400px; /* Limit the width of the form */
+  margin-left: auto; /* Center form horizontally */
+  margin-right: auto; /* Center form horizontally */
+}
+
+/* Input fields in the Todo Form */
+form input[type="text"],
+form textarea,
+form input[type="date"],
+form button {
+  width: 100%; /* Full width for input elements */
+  padding: 12px; /* Padding for inputs */
+  margin-bottom: 15px; /* Space below inputs */
+  border: 1px solid #d0d0d0; /* Light border */
+  border-radius: 8px; /* Rounded borders */
+  box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.1); /* Subtle inner shadow */
+  transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+/* Focus states for inputs in the form */
+form input[type="text"]:focus,
+form textarea:focus,
+form input[type="date"]:focus {
+  border-color: #5c6bc0; /* Blue border on focus */
+  outline: none; /* Remove outline */
+}
+
+/* Button styles in the Todo Form */
+form button {
+  background-color: #5c6bc0; /* Blue background */
+  color: white; /* White text color */
+  border: none; /* Remove default border */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Larger font size */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+/* Hover and active states for buttons in the form */
+form button:hover {
+  background-color: #3f51b5; /* Darker shade on hover */
+  transform: translateY(-2px); /* Lift effect on hover */
+}
+
+form button:active {
+  transform: translateY(1px); /* Press effect on click */
+}
+
+/* Placeholder text styling for inputs */
+form input::placeholder,
+form textarea::placeholder {
+  color: #a0a0a0; /* Light gray for placeholder text */
+  font-style: italic; /* Italic style for placeholder text */
+}
+
+/* Textarea specific styling */
+form textarea {
+  resize: none; /* Disable resizing */
+  height: 100px; /* Set a specific height for the textarea */
+}
+
+/* Adjustments for textarea in the form */
+form textarea:focus {
+  border-color: #5c6bc0; /* Blue border on focus */
+  outline: none; /* Remove outline */
+}
